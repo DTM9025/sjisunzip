@@ -6,19 +6,19 @@ This is a pretty braindead command line utility that simply forces the encoding 
 [Download Here](https://github.com/DTM9025/sjisunzip/releases)
 
 ```
-Usage: sjisunzip [-c <Codepage Number>] someFile.zip [toFolder]
+Usage: .\sjisunzip.exe [-c <Codepage Number>] someFile.zip [toFolder]
     -c: Sets the codepage the extracter will use (default 932). Common ones are 932 (JP), 936 (CN), and 1252 (EN)
-Usage: sjisunzip -r [-c <Codepage Number>] someFile.zip
+Usage: .\sjisunzip.exe -r [-c <Codepage Number>] someFile.zip
     -r: Recode file to {filename}_utf8.zip
     -c: Sets the codepage the extracter will use (default 932). Common ones are 932 (JP), 936 (CN), and 1252 (EN)
 
 Examples:
-    sjisunzip aFile.zip
-    sjisunzip aFile.zip MyNewFolder
-    sjisunzip -c 936 aFile.zip
-    sjisunzip -c 936 aFile.zip MyNewFolder
-    sjisunzip -r aFile.zip
-    sjisunzip -r -c 936 aFile.zip
+    .\sjisunzip.exe aFile.zip
+    .\sjisunzip.exe aFile.zip MyNewFolder
+    .\sjisunzip.exe -c 936 aFile.zip
+    .\sjisunzip.exe -c 936 aFile.zip MyNewFolder
+    .\sjisunzip.exe -r aFile.zip
+    .\sjisunzip.exe -r -c 936 aFile.zip
 ```
 
 You can also just drop a zip file onto the program since that'll pass it as the first argument and the contents will be extracted in the same directory.
