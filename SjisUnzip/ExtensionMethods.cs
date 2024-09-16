@@ -44,10 +44,11 @@ namespace SjisUnzip
 		/// </summary>
 		/// <see cref="RawTranscode"/>
 		/// <param name="str">The garbled string.</param>
+		/// <param name="to">The destination encoding the bytes will be 'interpreted' as.</param>
 		/// <returns>A fixed unicode string.</returns>
-		public static string DecodeMojibake(this string str)
+		public static string DecodeMojibake(this string str, Encoding to)
 		{
-			return str.RawTranscode(Encoding.Default, Encoding.GetEncoding(932));
+			return str.RawTranscode(Encoding.Default, to);
 		}
 
 		/// <summary>
